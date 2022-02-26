@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+
+<!--    autowire with annotation works as auto byName, byType, Constructor automatically-->
+<!--    // if name not equal then checks type-->
+    <bean name="room1" class="org._9_AutowiringWithAnnotation.Room" p:roomPrice="1500" p:roomNo="501"/>
+
+<!--    // prev object and this object type same so compiler will be confused-->
+<!--    to solve this error we use @Qualifier("beanName") after the place of annotation in java class-->
+        <bean name="room2" class="org._9_AutowiringWithAnnotation.Room" p:roomPrice="1522" p:roomNo="331"/>
+
+    <bean name="customerBean" class="org._9_AutowiringWithAnnotation.Customer"/>
+
+</beans>
