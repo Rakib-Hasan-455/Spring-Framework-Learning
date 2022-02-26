@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- Also to active the @PostConstruct and @PreDestroy Annotations. We need to use this line below.. Otherwise init and destroy method won't be called-->
+
+    <context:annotation-config/>  <!-- It imports all spring annotations -->
+
+    <!-- or we can import only common annotation bean post processors annotations or imports only @PostConstructor and @PreDestroy annotations-->
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+
+    <bean name="roomBean" class="org._7_LifeCycleSpringMethodAnnotations.Room" p:roomPrice="1500"/>
+
+</beans>

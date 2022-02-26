@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<!--    <bean name="room" class="org._8_AutowiringWithXML.Room" p:roomPrice="1500" p:roomNo="501"/>-->
+    <bean name="room1" class="org._8_AutowiringWithXML.Room" p:roomPrice="1522" p:roomNo="331"/>
+<!-- Better to use byName and Constructor in autowire-->
+    <bean name="customerBean" class="org._8_AutowiringWithXML.Customer" autowire="byType"/>
+<!--    //  autowire="byType" it doesn't work when there's two object created in beans config file.
+                              So it's better to avoid this.. -->
+<!--    //  autowire="constructor" It matches the objects constructor and does reference-->
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- this is our default manual bean -->
+    <bean class="org._1_PrimitiveBeansPropInject.Student" name="studentBean1">
+        <property name="studentID">
+            <value> 144 </value>
+        </property>
+
+        <property name="studentName" value="Md. Rakibul Hasan"/>
+
+        <property name="studentAddress" value="Pangsha, Rajbari"/>
+    </bean>
+
+    <!-- This is P schema bean -->
+    <bean class="org._1_PrimitiveBeansPropInject.Student" name="studentBean2" p:studentID="100" p:studentName="Md. Mursalin" p:studentAddress="Nakhalpara, Dhaka"/>
+
+</beans>
