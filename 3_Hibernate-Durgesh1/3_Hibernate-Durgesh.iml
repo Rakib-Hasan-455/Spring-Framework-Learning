@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" value="9602a94d-da98-43ff-85f2-5c8dcbfff982" />
+          <unit-entry name="hibernate2.cfg.xml" value="1527e009-e5e4-4921-a0e9-bbc92848c413" />
+          <unit-entry name="hibernate3.cfg.xml" value="ecff2164-984b-4df2-8a6c-ac29c0a77306" />
+          <unit-entry name="hibernate4.cfg.xml" value="ab9ad46d-f8fb-47a8-b040-cfe98d782d7b" />
+          <unit-entry name="hibernate5.cfg.xml" value="ab495fec-666f-4f43-a27b-ff09dd6f7ff3" />
+          <unit-entry name="hibernate6.cfg.xml" value="cc6f263b-4ca9-48df-b88d-20b01108cd7a" />
+          <unit-entry name="hibernate7.cfg.xml" value="e90a45a0-d399-42c3-8f7c-d9df4a3a7de1" />
+          <unit-entry name="hibernate8.cfg.xml" value="a2db4536-1574-4ef5-a5ba-5cd4a39cc753" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate2.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate3.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate4.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate5.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate6.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate7.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate8.cfg.xml" />
+      </configuration>
+    </facet>
+  </component>
+</module>

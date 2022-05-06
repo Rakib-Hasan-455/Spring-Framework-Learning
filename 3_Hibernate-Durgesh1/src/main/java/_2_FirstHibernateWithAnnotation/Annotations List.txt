@@ -1,0 +1,16 @@
+@Entity = To mark any class as Entity also Entity name to detect that this classes entity name is this
+
+@Table = To create table in database, also Table name to create table in database with custom name
+
+@Id = to set the column as primary kye
+
+@GeneratedValue = Automatically generates the value in a sequence, like, 1, 2, 3, 4,
+
+@Column = To modify a table column/attribute of database
+
+@Transient = To tell not to create this column
+
+@Temporal = To Set date in a specific format
+
+@Lob = To tell hibernate that we are sending big data like image/video.
+        BLOB = Binary Lob, CLOB = Character Lob
