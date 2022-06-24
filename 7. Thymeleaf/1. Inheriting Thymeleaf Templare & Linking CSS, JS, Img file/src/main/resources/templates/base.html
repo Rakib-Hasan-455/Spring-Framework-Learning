@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xlms:th="http://thymeleaf.org" xmlns:xlms="http://www.w3.org/1999/xhtml" th:fragment="layout(content)">
+<head>
+    <link th:href="@{css/styles.css}">
+    <meta charset="UTF-8">
+    <title>This is from base page</title>
+</head>
+<body>
+<h3> This is the base page Header</h3>
+<div th:replace="${content}"></div>
+<h3> THis is base page footer</h3>
+<img th:src="@{images/lucifer.jpg}">
+<script th:src="@{js/js1.js}"></script>
+</body>
+</html>
