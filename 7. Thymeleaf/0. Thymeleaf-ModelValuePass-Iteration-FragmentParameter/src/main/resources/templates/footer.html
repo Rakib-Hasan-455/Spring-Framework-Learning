@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xlms:th="http://thymeleaf.org" xmlns:xlms="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>footer</title>
+</head>
+<body>
+<footer th:fragment="footer1(year, company)">
+    <p> This is a footer </p>
+    My company year: <span th:text="${year}"></span><br>
+    My company name: <span th:text="${company}"></span>
+ </footer>
+</body>
+</html>

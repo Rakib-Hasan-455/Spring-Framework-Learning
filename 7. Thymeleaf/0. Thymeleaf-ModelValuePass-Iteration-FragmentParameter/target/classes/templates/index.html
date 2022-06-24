@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xlms:th="http://thymeleaf.org" xmlns:xlms="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> Hellow World </p>
+<!-- Value passing with model -->
+<p> My name is <span th:text="${name}"></span> </p>
+<p> My name is <span th:text="${#strings.toUpperCase(name)}"></span> </p>
+
+<!-- Iteration -->
+<p> Printing lists </p>
+<p th:each="n : ${namelist}">
+    <span th:text="${n}"></span>
+</p>
+
+<!-- Fragmentation and value passing through fragmentation-->
+<h1 th:replace="footer::footer1('2022', ${mycompanyname})">  </h1> <!-- replaces h1 with footer tag-->
+<!--<h1 th:insert="footer::footer1"> Random things </h1>  // h1 tag with footer tag-->
+<!--<h1 th:include="footer::footer1"> Random things </h1> // h1 tag without footer tag-->
+
+
+
+</body>
+</html>
